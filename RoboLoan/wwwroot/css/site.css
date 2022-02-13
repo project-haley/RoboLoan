@@ -85,6 +85,10 @@ body {
     float: right;
 }
 
+.tech-icon {
+    text-align: center;
+}
+
 #paymentTitle {
     text-align: center;
     font-size: 1.5rem;
@@ -130,3 +134,19 @@ body {
         background-color: #ff993b;
         color: #212121;
     }
+
+.bsicon {
+    color: rgb(72, 1, 236);
+}
+
+.jsicon {
+    color: rgb(218, 204, 10);
+}
+
+.cssicon {
+    color: rgb(11,82,214);
+}
+
+.htmlicon {
+    color: orangered;
+}

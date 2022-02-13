@@ -1,8 +1,32 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+﻿<main class="flex-shrink-0">
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row g-5 py-5 row-cols-1 row-cols-lg-2">
+            <div class="col">
+                <h1 class="display-5 fw-bold lh-1 mb-3">RoboLoan: A Coding Project</h1>
+                <h4 class="lead">Processing.  Processing.  Calculated.</h4>
+                <ul class="fa-ul pt-2 checklist">
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>CSS & Bootstrap Layout</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>ASP.NET MVC Fundamentals</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>C# Loops</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>C# Functions</li>
+                </ul>
+                <div>
+                    <a type="button" class="btn btn-outline-dark btn-lg px-4 me-md-4" asp-controller="Home" asp-action="AppPage">Try Me!</a>
+                </div>
+                <h5 class="fw-bold mt-5">
+                    <div class="d-flex">
+                        <div class="row justify-content-center text-center">
+                            <div class="col-3 tech-icon"><i class="fab fa-js-square fa-4x jsicon"></i></div>
+                            <div class="col-3 tech-icon" style="padding-right: 0px; padding-left: 0px;"><i class="fab fa-bootstrap fa-4x bsicon"></i></div>
+                            <div class="col-3 tech-icon"><i class="fab fa-html5 fa-4x htmlicon"></i></div>
+                            <div class="col-3 tech-icon"><i class="fab fa-css3-alt fa-4x cssicon"></i></div>
+                        </div>
+                    </div>
+                </h5>
+            </div>
+            <div class="col order-first order-lg-last">
+                <img src="~/img/roboloan-logo.svg" class="img-fluid center-block d-block mx-auto" alt="App Logo" width="700" height="500">
+            </div>
+        </div>
+    </div>
+</main>
