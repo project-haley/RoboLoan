@@ -1,4 +1,5 @@
-﻿@model RoboLoan.Models.Loan 
+﻿@model RoboLoan.Models.Loan
+@using System.Globalization  
 
 <div class="container">
     <h1>Loan Calculator</h1>
@@ -33,7 +34,7 @@
                 <p>Your Monthly Payments</p>
             </div>
             <p id="payment">
-                @Model.Payment.ToString("C")
+                @Model.Payment.ToString("C2")
             </p>
 
             <div class="row">
@@ -41,19 +42,19 @@
                     <label class="text-start">Total Principal</label>
                 </div>
                 <div class="col-6 text-end" id="totalPrincipal">
-                    @Model.Amount.ToString("C")
+                    @Model.Amount.ToString("C2")
                 </div>
                 <div class="col-6">
                     <label class="text-start">Total Interest</label>
                 </div>
                 <div class="col-6 text-end" id="totalInterest">
-                    @Model.TotalInterest.ToString("C")
+                    @Model.TotalInterest.ToString("C2")
                 </div>
                 <div class="col-6">
                     <label class="text-start">Total Cost</label>
                 </div>
                 <div class="col-6 text-end" id="totalCost">
-                    @Model.TotalCost.ToString("C")
+                    @Model.TotalCost.ToString("C2")
                 </div>
             </div>
 
@@ -80,11 +81,11 @@
                         {
                         <tr>
                             <td>@item.Month</td>
-                            <td>@item.Payment.ToString("C")</td>
-                            <td>@item.MonthlyPrincipal.ToString("C")</td>
-                            <td>@item.MonthlyInterest.ToString("C")</td>
-                            <td>@item.TotalInterest.ToString("C")</td>
-                            <td>@item.Balance.ToString("C")</td>
+                            <td>@item.Payment.ToString("C2")</td>
+                            <td>@item.MonthlyPrincipal.ToString("C2")</td>
+                            <td>@item.MonthlyInterest.ToString("C2")</td>
+                            <td>@item.TotalInterest.ToString("C2")</td>
+                            <td>@item.Balance.ToString("C2")</td>
                         </tr>
                         }
                     </tbody>
