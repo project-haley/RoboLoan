@@ -20,7 +20,7 @@ namespace RoboLoan.Helpers
             var monthlyPrincipal = 0.0m;
             var monthlyRate = CalcMonthlyRate(loan.Rate);
 
-            for (int month = 0; month <= loan.Term; month++)
+            for (int month = 0; month < loan.Term; month++)
             {
                 monthlyInterest = CalcMonthlyInterest(balance, monthlyRate);
                 totalInterest += monthlyInterest;
